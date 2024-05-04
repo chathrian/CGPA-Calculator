@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="/Cal-1/style.css">
+    <link rel="icon" href="./New folder/images.jfif">
+</head>
+<body>
+    <div class="para">
+       <h2> What is CGPA?</h2>
+       <p>CGPA, or Cumulative Grade Point Average, is a measure of a student's academic performance. It is calculated based on the grades obtained in various courses over a period of time. CGPA provides a standardized way to evaluate academic achievements.</p>
+
+       <h2>How to Use the CGPA Calculator</h2>
+
+       <p>Using our CGPA calculator is easy. Just follow these simple steps:</p>
+       
+       <h4>Step:1</h4>
+       <p>Enter your course code. This is not mandatory.</p>
+
+       <h4>Step:2</h4>
+       <p>Enter your paper credits</p>
+
+       <h4>Step:3</h4>
+       <p>Enter your grade for given paper.</p>
+
+       <h4>steps:4</h4>
+       <p>Click the calculate CGPA to calculate your CGPA.</p>
+    </div>
+
+    <div class="calculator-box">
+        <h1>CGPA CALCULATOR</h1>
+        <p>
+          Welcome to the CGPA Calculator.
+        </p>
+    
+        <div id="course-wrapper">
+          <form class="key-0">
+              <strong><label id="course-row" for="courses">Courses</label></strong>
+            <strong><label id="course-row" for="courses">Credit Units</label></strong>
+            <strong><label id="course-row" for="courses">Grades</label></strong>
+            
+            <input
+              type="text"
+              placeholder="Course Code"
+              class="courses key-0"
+            />
+           
+            <input
+              type="number"
+              class="credit-units key-0"
+              placeholder="Credit Units"
+              value=""
+              required
+            />
+           
+            <select class="grade key-0" required>
+              <option class="grade" value="select">Select</option>
+              <option class="grade" value="10">10</option>
+              <option class="grade" value="9">9</option>
+              <option class="grade" value="8">8</option>
+              <option class="grade" value="7">7</option>
+              <option class="grade" value="6">6</option>
+              <option class="grade" value="5">5</option>
+              <option class="grade" value="0">FAIL</option>
+            </select>
+          </form>
+        </div>
+        
+        <div class="btn">
+          <button onclick="addCourse()">+ Add Course</button>
+          <button onclick="removeCourse()">- Remove Course</button>
+          <button onclick="calcCgpa()">Calculate CGPA</button>
+        </div>
+        <div class="lastp">
+          <p id="cgpa-calc">Your CGPA is:</p>
+        </div>
+      </div>
+
+      <div>
+        
+      </div>
+      <script src="/Cal-1/script.js"></script>
+</body>
+</html>
